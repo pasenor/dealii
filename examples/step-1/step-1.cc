@@ -61,7 +61,7 @@ void first_grid()
   // to write programs in an essentially dimension independent way.
 
   // Next, we want to fill the triangulation with a single cell for a square
-  // domain. The triangulation is the refined four times, to yield $4^4=256$
+  // domain. The triangulation is then refined four times, to yield $4^4=256$
   // cells in total:
   GridGenerator::hyper_cube(triangulation);
   triangulation.refine_global(4);
@@ -152,8 +152,8 @@ void second_grid()
       // "http://en.wikipedia.org/wiki/Iterator#C.2B.2B">wikipedia</a> for more
       // information). Typically, any container type in C++ will return an
       // iterator pointing to the start of the collection with a method called
-      // `begin`, and an iterator point to 1 past the end of the collection with
-      // a method called `end`. We can increment an iterator `it` with the
+      // `begin`, and an iterator pointing to 1 past the end of the collection 
+      // with a method called `end`. We can increment an iterator `it` with the
       // operator `++it`, dereference it to get the underlying data with `*it`,
       // and check to see if we're done by comparing `it != collection.end()`.
       //
